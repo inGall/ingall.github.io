@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+
+<html>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <head>
+      <title>Welcome!</title>
+      <link rel='stylesheet' type='text/css' href='personal.css'>
+    </head>
+    <body>
+      <script src="script.js"></script>
+      <h1>Loh Jia Hao</h1>
+
+      <div class="box quickLink">
+        <ul>
+          <li><a onclick="scrollToArea(250)">About Me</a></li>
+          <li><a onclick="scrollToArea(500)">Programming Language</a></li> 
+          <li><a onclick="scrollToArea(500)">My Works</a></li>
+          <li><a onclick="scrollToArea(960)">Education</a></li> 
+          <li><a onclick="scrollToArea(1800)">Experience</a></li> 
+          <li><a onclick="scrollToArea(2300)">Schedule</a></li>  
+        </ul>
+      </div>
+
+      <div class="box aboutMe">
+        <a class="title">About Me</a>
+        <p>Hello guys, I'm <strong>Jia Hao</strong>, twenty-three this year, a third year student, majoring in <strong>Computer Engineering</strong> at <strong>NUS</strong>.</p>
+        <p>Currently on an internship program at <strong>AeroLion Technologies</strong> as a <strong>Software Development Assistant</strong> from 7 Jul to 28 Dec.</p>
+      </div>
+
+      <table class="progLangandWorks">
+        <tr>
+          <td class="box progLang" id="progLang">
+            <a class="title">Programming Language</a>
+            <ul>
+              <li>C</li>
+              <li>Java</li>
+              <li>Python</li>
+              <li>Javascript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Ruby</li>
+            </ul>
+          </td>
+          <td class="box works">
+            <a class="title">My works</a>
+            <ul>
+              <li>
+                <a href="https://play.google.com/store/apps/details?id=jia_hao_95hotmail.com.mycalculator&hl=en" target="_blank">myCalculator</a>
+                <br>
+                <img src="./img/myCalculatorImage.png">
+              </li>
+              <li>
+                <a href="https://play.google.com/store/apps/details?id=jia_hao_95hotmail.com.firstto50" target="_blank">50!</a>
+                <br>
+                <img src="./img/fiftyImage.png">
+              </li>
+              <li>
+                <a href="https://play.google.com/store/apps/details?id=jia_hao_95hotmail.com.moddd&hl=en" target="_blank">MODDD</a>
+                <br>
+                <img src="./img/modddImage.png">
+              </li>
+              <li>
+                <a href="https://ingall.github.io/connect4/" target="_blank">Connect 4</a>
+                <div class="websiteWrap">
+                  <iframe id="iframe" src="https://ingall.github.io/connect4/"></iframe>
+                </div>
+              </li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+
+      <div class="box edu">
+        <p class="title">Education</p>
+        <br>
+        <table class="eduAndExpTable">
+          <tr>
+            <td>
+              <img src="./img/nus.png" class="nuslogo">
+            </td>
+            <td class="descriptionCol">
+              <p class="schoolName">National University of Singapore</p>
+              <p class="degreeAndYear">NUS Bachelor of Engineering (Computer Engineering)</p>
+              <p class="degreeAndYear">(2016 - Present)</p>
+              <ul class="achievement">
+                <li>Current CAP: 4.07</li>
+                <li>Expected date of graduation: MAY 2020</li>
+                <li id="moduleSubList">Notable Modules Taken
+                  <ul class="modules" id="modulePopUp">
+                    <li>CS1010  Programming Methodology</li>
+                    <li>CG1108  Electrical Engineering</li>
+                    <li>CS1020  Data Structures & Algorithms I</li>
+                    <li>CS2101  Effective Communication for Computing Professionals</li>
+                    <li>CS2103T Software Engineering</li>
+                    <li>EE2020  Digital Fundamentals</li>
+                    <li>CG2023  Signals & Systems</li>
+                    <li>EE2024  Programming for Computer Interfaces</li>
+                    <li>CG2271  Real-Time Operating System</li>
+                  </ul>
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="./img/beihang.png" class="beihanglogo">
+            </td>
+            <td class="descriptionCol">
+              <p class="schoolName">Beihang University</p>
+              <p class="degreeAndYear">International Summer School</p>
+              <p class="degreeAndYear">(Jul 2017 - Aug 2017)</p>
+              <ul class="achievement">
+                <li>1 month Program in BeiJing, China</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="./img/ajc.png" class="ajclogo">
+            </td>
+            <td class="descriptionCol">
+              <p class="schoolName">Anderson Junior College</p>
+              <p class="degreeAndYear">(2012-2013)</p>
+              <ul class="achievement">
+                <li>Class Leader</li>
+                <li>A grade for H2 Math, Chemistry, Economics, H1 Physics</li>
+                <li>Rank point: 78.75</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="box exp">
+        <p class="title">Experience</p>
+        <br>
+        <table class="eduAndExpTable">
+          <tr>
+            <td>
+              <img src="./img/alt.png" class="altlogo">
+            </td>
+            <td class="descriptionCol">
+              <p class="schoolName">AeroLion Technologies</p>
+              <p class="degreeAndYear">(2018 - Present)</p>
+              <ul class="achievement">
+                <li>Assisting in carrying out flight tests</li>
+                <li>Processing and storing of image data into system for machine learning and 3D image reconstruction</li>
+                <li>Building and training of Convolutional Neural Network models for machine learning.</li>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="box schedule">
+        <a class="title">AY18/19 Sem 1 (Current)</a>
+        <table class="scheduleTable">
+          <tr>
+            <th>Time</th>
+            <th>0900-1000</th>
+            <th>1000-1100</th>
+            <th>1100-1200</th>
+            <th>1200-1300</th>
+            <th>1300-1400</th>
+            <th>1400-1500</th>
+            <th>1500-1600</th>
+            <th>1600-1700</th>
+            <th>1700-1800</th>
+            <th>1800-1900</th>
+            <th>1900-2000</th>
+            <th>2000-2100</th>
+          </tr>
+          <tr>
+            <td>Mon</td>
+            <td class="eg3611" colspan="3">
+              <p class="modCode">EG3611</p>
+              <p class="modClass">AeroLion Technologies</p>
+              <p class="modLocation">Science Park II</p>
+            </td>
+            <td rowspan = "5" colspan = "1">
+              <p>Lunch Break</p>
+            </td>
+            <td class="eg3611" colspan="5">
+              <p class="modCode">EG3611</p>
+              <p class="modClass">AeroLion Technologies</p>
+              <p class="modLocation">Science Park II</p>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Tues</td>
+            <td class="eg3611" colspan="3">
+              <p class="modCode">EG3611</p>
+              <p class="modClass">AeroLion Technologies</p>
+              <p class="modLocation">Science Park II</p>
+            </td>
+            <td class="eg3611" colspan="5">
+              <p class="modCode">EG3611</p>
+              <p class="modClass">AeroLion Technologies</p>
+              <p class="modLocation">Science Park II</p>
+            </td>
+            <td class="ee3031" colspan="3">
+              <p class="modCode">EE3031</p>
+              <p class="modClass">LEC [02]</p>
+              <p class="modLocation">UT-AUD3</p>
+            </td>
+          </tr>
+          <tr>
+            <td>Wed</td>
+            <td class="eg3611" colspan="3">
+              <p class="modCode">EG3611</p>
+              <p class="modClass">AeroLion Technologies</p>
+              <p class="modLocation">Science Park II</p>
+            </td>
+            <td class="eg3611" colspan="5">
+              <p class="modCode">EG3611</p>
+              <p class="modClass">AeroLion Technologies</p>
+              <p class="modLocation">Science Park II</p>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Thurs</td>
+            <td class="eg3611" colspan="3">
+              <p class="modCode">EG3611</p>
+              <p class="modClass">AeroLion Technologies</p>
+              <p class="modLocation">Science Park II</p>
+            </td>
+            <td class="eg3611" colspan="5">
+              <p class="modCode">EG3611</p>
+              <p class="modClass">AeroLion Technologies</p>
+              <p class="modLocation">Science Park II</p>
+            </td>
+            <td></td>
+            <td class="tuition" colspan="2">
+              <p class="modCode">Tuition</p>
+              <p class="modLocation">Sembawang</p>
+            </td>
+          </tr>
+          <tr>
+            <td>Fri</td>
+            <td class="eg3611" colspan="3">
+              <p class="modCode">EG3611</p>
+              <p class="modClass">AeroLion Technologies</p>
+              <p class="modLocation">Science Park II</p>
+            </td>
+            <td class="eg3611" colspan="5">
+              <p class="modCode">EG3611</p>
+              <p class="modClass">AeroLion Technologies</p>
+              <p class="modLocation">Science Park II</p>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+        <br>
+        <br>
+        <a class="title">AY18/19 Sem 1 (Current)</a>
+        <table class="scheduleTable">
+          <tr>
+            <th>Time</th>
+            <th>0900-1000</th>
+            <th>1000-1100</th>
+            <th>1100-1200</th>
+            <th>1200-1300</th>
+            <th>1300-1400</th>
+            <th>1400-1500</th>
+            <th>1500-1600</th>
+            <th>1600-1700</th>
+            <th>1700-1800</th>
+            <th>1800-1900</th>
+            <th>1900-2000</th>
+            <th>2000-2100</th>
+          </tr>
+          <tr>
+            <td>Mon</td>
+            <td></td>
+            <td class="st2334" colspan="2">
+              <p class="modCode">ST2334</p>
+              <p class="modClass">LEC [SL1]</p>
+              <p class="modLocation">LT27</p>
+            </td>
+            <td></td>
+            <td class="st2334">
+              <p class="modCode">ST2334</p>
+              <p class="modClass">TUT [T2]</p>
+              <p class="modLocation">S16-06-18</p>
+            </td>
+            <td class="cfg2001" colspan="2">
+              <p class="modCode">CFG2001</p>
+              <p class="modClass">LEC [1]</p>
+              <p class="modLocation">YIH-Toyko (1,8)</p>
+            </td>
+            <td class="cg2271" colspan="2">
+                <p class="modCode">CG2271</p>
+                <p class="modClass">LEC [1]</p>
+                <p class="modLocation">LT19</p>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Tues</td>
+            <td class="cg2023" colspan="3">
+              <p class="modCode">CG2023</p>
+              <p class="modClass">LAB [TU2]</p>
+              <p class="modLocation">DSALab (5,8,10,12)</p>
+            </td>
+            <td></td>
+            <td></td>
+            <td class="ee2024" colspan="2">
+              <p class="modCode">EE2024</p>
+              <p class="modClass">LEC [ALL]</p>
+              <p class="modLocation">LT6</p>
+            </td>
+            <td class="cg2023" colspan="2">
+              <p class="modCode">CG2023</p>
+              <p class="modClass">PLEC [1]</p>
+              <p class="modLocation">EA-02-11</p>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Wed</td>
+            <td class="ee2024" colspan="3">
+              <p class="modCode">EE2024</p>
+              <p class="modClass">LAB [W1]</p>
+              <p class="modLocation">DigELab</p>
+            </td>
+            <td></td>
+            <td class="ee2024">
+              <p class="modCode">EE2024</p>
+              <p class="modClass">TUT [T12]</p>
+              <p class="modLocation">E3-06-05</p>
+            </td>
+            <td class="cg2271" colspan="2">
+              <p class="modCode">CG2271</p>
+              <p class="modClass">LAB [2]</p>
+              <p class="modLocation">COM1-0114</p>
+            </td>
+            <td></td>
+            <td></td>
+            <td class="get1004" colspan="3">
+              <p class="modCode">GET1004</p>
+              <p class="modClass">LEC [SL1]</p>
+              <p class="modLocation">LT27</p>
+            </td>
+          </tr>
+          <tr>
+            <td>Thurs</td>
+            <td></td>
+            <td class="st2334" colspan="2">
+              <p class="modCode">ST2334</p>
+              <p class="modClass">LEC [SL1]</p>
+              <p class="modLocation">LT27</p>
+            </td>
+            <td></td>
+            <td class="cg2271">
+              <p class="modCode">CG2271</p>
+              <p class="modClass">TUT [2]</p>
+              <p class="modLocation">COM1-0203</p>
+            </td>
+            <td class="cg2023" colspan="2">
+                <p class="modCode">CG2023</p>
+                <p class="modClass">PTUT [2]</p>
+                <p class="modLocation">E3-06-08</p>
+            </td>
+            <td></td>
+            <td class="ee2024">
+              <p class="modCode">EE2024</p>
+              <p class="modClass">LEC [ALL]</p>
+              <p class="modLocation">LT6</p>
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Fri</td>
+            <td colspan="12"></td>
+          </tr>
+        </table>
+        
+
+      </div>
+    
+    
+    
+    </body>
+</html>

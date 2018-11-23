@@ -1,0 +1,288 @@
+body {
+  background-image: url("./img/background.jpeg");
+
+  /* Parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40px;
+}
+
+.box {
+  background-color: white;
+  text-align: center;
+  border-radius: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  vertical-align: top;
+  margin: 50px auto;
+  border: 4px solid #cf2020;
+}
+
+.quickLink {
+  width: 900px;
+}
+
+.quickLink li {
+  display: inline;
+  padding: 10px; 
+}
+
+.quickLink li a {
+  font-family: cursive;
+  text-decoration: none;
+  color: blueviolet;
+  font-size: 20px;
+}
+
+.quickLink li a:hover {
+  color: black;
+}
+
+.title {
+  display: inline-block;
+  font-family: cursive;
+  font-size: 20px;
+  font-weight: bold;
+  border: 5px dashed #20bcd5;
+  padding: 15px;
+}
+
+.aboutMe {
+  width: 1200px;
+}
+
+.aboutMe p {
+  font-size: 20px;
+  color: rgb(36, 29, 29);
+  font-style: italic;
+}
+
+.progLangandWorks {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1500px;
+  border-collapse: separate;
+  border-spacing: 50px 0;
+}
+
+.progLang {
+  width: 300px;
+}
+
+.progLang ul {
+  font-size:20px;
+  text-align: left;
+  margin: 30px;
+  color: rgb(235, 76, 102);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.works {
+  width: 1000px;
+}
+
+.works li {
+  display: inline-block;
+  margin-right: 50px;
+}
+
+.works a {
+  font-size: 20px;
+  text-decoration: none;
+  font-family: cursive;
+}
+
+.works img {
+  margin-top: 1em;
+  height: 200px;
+  width: 100px;
+}
+
+.websiteWrap {
+  width: 190px;
+  height: 200px;
+  padding: 0;
+  margin-top: 1em;
+  overflow: hidden;
+}
+
+#iframe {
+  width: 1200px;
+  height: 786px;
+  border: 0;
+
+  -ms-transform: scale(0.25);
+  -moz-transform: scale(0.25);
+  -o-transform: scale(0.25);
+  -webkit-transform: scale(0.25);
+  transform: scale(0.25);
+
+  -ms-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+.edu, .exp {
+  width: 1200px;
+}
+
+.eduAndExpTable {
+  margin-left:auto;
+  margin-right:auto;
+  width: 1000px;
+}
+
+.eduAndExpTable td {
+  vertical-align: top;
+}
+
+.nuslogo {
+  padding-top: 50px;
+}
+
+.beihanglogo {
+  padding-top: 40px;
+  height: 5cm;
+  width: 5cm;
+}
+
+.ajclogo {
+  padding-top: 40px;
+  height: 5cm;
+  width: 5cm;
+}
+
+.altlogo {
+  padding-top: 50px;
+  height: 3cm;
+  width: 6cm;
+}
+
+.descriptionCol {
+  width: 630px;
+}
+
+.schoolName {
+  color: #6525ef;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 0em;
+}
+
+.degreeAndYear {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
+.achievement {
+  color: #7c787a;
+  font-size: 15px;
+}
+
+.achievement li {
+  text-align: left;
+}
+
+#moduleSubList #modulePopUp {
+  display: none;
+}
+
+#moduleSubList:hover #modulePopUp {
+  display: block;
+}
+
+.modules {
+   list-style-type: square;
+   font-family: Helvetica, Arial, sans-serif;
+   color: green;
+   padding-top: 10px;
+   font-size: 10px;
+}
+
+.schedule {
+  width: 1400px;
+}
+
+.scheduleTable {
+  width: 1300px;
+  margin-left:auto;
+  margin-right:auto;
+  font-family: cursive;
+  margin-top: 30px;
+}
+
+.scheduleTable, .scheduleTable th, .scheduleTable td {
+  border: 4px solid #5f4e4e;
+  border-collapse: collapse;
+}
+
+.scheduleTable td {
+  height: 70px;
+}
+
+.modCode {
+  font-weight: bold;
+  font-size: 25px;
+  margin-top: 0.4em;
+  margin-bottom: 0em;
+}
+
+.modClass {
+  font-size: 15px;
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
+.modLocation {
+  font-size: 10px;
+  margin-top: 1em;
+  font-weight: bold;
+}
+
+.eg3611 {
+  background-color: #2ce1ea;
+}
+
+.ee3031 {
+  background-color: #48df7f;
+}
+
+.tuition {
+  background-color: #df5348;
+}
+
+.st2334 {
+	background-color: #2ce1ea;
+}
+
+.ee2024 {
+	background-color: #d148df;
+}
+
+.cg2271 {
+	background-color: #48df7f;
+}
+
+.cg2023 {
+	background-color: #df5348;
+}
+
+.cfg2001 {
+	background-color: #e0fa24;
+}
+
+.get1004 {
+	background-color: #76f902;
+}
