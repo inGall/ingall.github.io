@@ -16,17 +16,13 @@ h1 {
 
 .box {
   background-color: white;
+  border: 4px solid #cf2020;
   text-align: center;
   border-radius: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
-  vertical-align: top;
   margin: 50px auto;
-  border: 4px solid #cf2020;
-}
-
-.quickLink {
-  width: 900px;
+  width: 1400px;
 }
 
 .quickLink li {
@@ -54,26 +50,10 @@ h1 {
   padding: 15px;
 }
 
-.aboutMe {
-  width: 1200px;
-}
-
 .aboutMe p {
   font-size: 20px;
   color: rgb(36, 29, 29);
   font-style: italic;
-}
-
-.progLangandWorks {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1500px;
-  border-collapse: separate;
-  border-spacing: 50px 0;
-}
-
-.progLang {
-  width: 300px;
 }
 
 .progLang ul {
@@ -84,8 +64,8 @@ h1 {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-.works {
-  width: 1000px;
+.progLang {
+  vertical-align: top;
 }
 
 .works li {
@@ -114,7 +94,7 @@ h1 {
 }
 
 #iframe {
-  width: 1200px;
+  width: 800px;
   height: 786px;
   border: 0;
 
@@ -129,10 +109,6 @@ h1 {
   -o-transform-origin: 0 0;
   -webkit-transform-origin: 0 0;
   transform-origin: 0 0;
-}
-
-.edu, .exp {
-  width: 1200px;
 }
 
 .eduAndExpTable {
@@ -204,15 +180,11 @@ h1 {
 }
 
 .modules {
-   list-style-type: square;
-   font-family: Helvetica, Arial, sans-serif;
-   color: green;
-   padding-top: 10px;
-   font-size: 10px;
-}
-
-.schedule {
-  width: 1400px;
+  list-style-type: square;
+  font-family: Helvetica, Arial, sans-serif;
+  color: green;
+  padding-top: 10px;
+  font-size: 10px;
 }
 
 .scheduleTable {
