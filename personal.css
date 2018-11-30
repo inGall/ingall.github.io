@@ -23,7 +23,7 @@ h1 {
   padding-top: 20px;
   padding-bottom: 20px;
   margin: 50px auto;
-  width: 1400px;
+  width: 1500px;
 }
 
 .quickLink li {
@@ -40,6 +40,7 @@ h1 {
 
 .quickLink li a:hover {
   color: black;
+  cursor: pointer;
 }
 
 .title {
@@ -47,8 +48,28 @@ h1 {
   font-family: cursive;
   font-size: 20px;
   font-weight: bold;
-  border: 5px dashed #20bcd5;
   padding: 15px;
+
+  background: linear-gradient(45deg, #20bcd5 50%, transparent 50%), 
+    linear-gradient(45deg, #20bcd5 50%, transparent 50%), 
+    linear-gradient(45deg,  #20bcd5 50%, transparent 50%), 
+    linear-gradient(45deg,  #20bcd5 50%, transparent 50%);
+  background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+  background-size: 16px 4px, 16px 4px, 4px 16px, 4px 16px;
+  background-position: 0 0, 100% 100%, 0 100%, 100% 0;
+}
+
+.title:hover {
+  -webkit-animation: rotate 2s linear infinite;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    background-position: 0 0, 100% 100%, 0 100%, 100% 0;
+  }
+  100% {
+    background-position: 100% 0, 0% 100%, 0 0, 100% 100%;
+  }
 }
 
 .aboutMe p {
@@ -67,6 +88,64 @@ h1 {
 
 .progLang {
   vertical-align: top;
+}
+
+.popup {
+  position: relative;
+  display: inline-block;
+}
+
+.proficiency {
+  width: 1200px;
+  background-color: rgb(107, 101, 101);
+  color: #fff;
+  text-align: center;
+  border-radius: 35px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 68%;
+  left:20%;
+
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1.5s;
+}
+
+.cursor:hover {
+  cursor: pointer;
+}
+
+.cursor:hover .proficiency {
+  visibility: visible;
+  opacity: 1;
+}
+
+.proficiency p {
+  font-size: 40px;
+}
+
+.profTable {
+  margin: 50px auto;
+  width: 1150px;
+  height: 300px;
+  border-spacing: 30px;
+}
+
+.langBar {
+  width: 50px;
+}
+
+.profBar {
+  border-radius: 20px;
+  width: 80px;
+}
+
+.emptyBar {
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 20px;
+  width: 80px;
 }
 
 .works li {
@@ -110,6 +189,12 @@ h1 {
   -o-transform-origin: 0 0;
   -webkit-transform-origin: 0 0;
   transform-origin: 0 0;
+}
+
+.expand:hover {
+  -webkit-transform: scale(2);
+  -ms-transform: scale(2);
+  transform: scale(2);
 }
 
 .eduAndExpTable {
@@ -190,15 +275,20 @@ h1 {
 
 .scheduleTable {
   width: 1300px;
-  margin-left:auto;
-  margin-right:auto;
+  margin: 60px auto;
   font-family: cursive;
-  margin-top: 30px;
+}
+
+.scheduleTable:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .scheduleTable, .scheduleTable th, .scheduleTable td {
   border: 4px solid #5f4e4e;
   border-collapse: collapse;
+  background-color: white;
 }
 
 .scheduleTable td {
@@ -224,38 +314,65 @@ h1 {
   font-weight: bold;
 }
 
-.eg3611 {
+#eg3611 {
   background-color: #2ce1ea;
 }
 
-.ee3031 {
+#ee3031 {
   background-color: #48df7f;
 }
 
-.tuition {
+#tuition {
   background-color: #df5348;
 }
 
-.st2334 {
+#st2334 {
 	background-color: #2ce1ea;
 }
 
-.ee2024 {
+#ee2024 {
 	background-color: #d148df;
 }
 
-.cg2271 {
+#cg2271 {
 	background-color: #48df7f;
 }
 
-.cg2023 {
+#cg2023 {
 	background-color: #df5348;
 }
 
-.cfg2001 {
+#cfg2001 {
 	background-color: #e0fa24;
 }
 
-.get1004 {
+#get1004 {
 	background-color: #76f902;
+}
+
+.green {
+  background-color: rgb(91, 241, 91);
+  border: 3px solid black;
+}
+
+.yellow {
+  background-color: rgb(247, 247, 8);
+  border: 3px solid black;
+}
+
+.red {
+  background-color: red;
+  border: 3px solid black;
+}
+
+.greenFont {
+  color: rgb(91, 241, 91);
+}
+
+.yellowFont {
+  color: rgb(247, 247, 8);
+}
+
+.redFont {
+  color: red;
 }
